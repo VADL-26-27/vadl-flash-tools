@@ -1,0 +1,24 @@
+# Example project Makefile (e.g. nose-cone-firmware/Makefile)
+
+# This lives in the PROJECT repo, not in vadl-flash-tools.
+
+BOARD = f411
+SRC_DIRS = src rtos
+LDSCRIPT = ld/STM32F411RETx_FLASH.ld
+INCLUDES = -Irtos/include
+
+include vadl-flash-tools/common.mk
+
+# Usage from the project root:
+
+# make -> builds build/firmware.bin
+
+# make flash -> flashes it (assumes already built)
+
+# make flash-build -> builds then flashes in one step
+
+# make flash-erase -> mass erase + reset
+
+# make clean -> removes build/
+
+# make size -> prints firmware size (arm-none-eabi-size)
