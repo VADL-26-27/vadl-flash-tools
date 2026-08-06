@@ -7,7 +7,7 @@ This repo provides:
 - `common.mk` — a shared Makefile fragment that handles compiling, linking, and wiring up `flash.sh`
 - `boards/` — per-MCU configuration, one subfolder per board
 
-It's meant to be added as a **git submodule** inside each firmware project repo (HIL rig, nose cone, avionics, recovery, etc.), so every subsystem team gets the same build/flash commands without duplicating scripts per project.
+It's meant to be added as a **git submodule** inside each firmware project repo (HIL rig, nose cone, avionics, recovery, etc.), so every subsystem gets the same build/flash commands without duplicating scripts per project.
 
 ---
 
